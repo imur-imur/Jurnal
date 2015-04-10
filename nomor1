@@ -18,24 +18,24 @@ public class Nomor1 {
      * @param args the command line arguments
      */      
     
-    private int pass=0;
-    private int current=1;
-    private int fibonacci;
+    private int pas=0;
+    private int curen=1;
+    private int fibonanci;
     private List<Integer> list=new ArrayList<Integer>();
     
     public Nomor1(){
-        list.add(0);
         list.add(1);
+        list.add(2);
     }
     
     public List<Integer> getFibonacci(int limit){
         
         for(int i=0;i<limit-2;i++){
-            fibonacci=current+pass;
-            pass=current;
-            current=fibonacci;
+            fibonanci=curen+pas;
+            pas=curen;
+            curen=fibonanci;
             
-            list.add(fibonacci);
+            list.add(fibonanci);
         }
         
         return list;
